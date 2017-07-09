@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Saasapp</title>
+    <title>DevMatch</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
@@ -10,6 +10,50 @@
   </head>
 
   <body>
+    <!--navigation-->
+<div class="navbar navbar-inverse navbar-fixed-left">
+  <a class="navbar-brand" href="/">DevMatch</a>
+  <ul class="nav navbar-nav">
+    <li><a href="/"><i class="fa fa-home"></i><span> Home </span></a></li>
+   <li><a href="/about"><i class="fa fa-info-circle"></i><span> About </span></a></li>
+   <li><a href="#love"><i class="fa fa-heart"></i><span> Courses </span></a></li>
+   <li><a href="#work"><i class="fa fa-briefcase"></i><span> Leitfaden </span></a></li>
+   <li class="custom-sign-in"><a href="#contact">Sign In</a></li>
+  </ul>
+</div>
+<!--end navigation-->
+<!-- 1st section-->
+<div class="wrapper">
+<div class="container" id="home">
+ <div class="row">
+   <h2>Hier sollte Inhalt stehen</h2>
+ </div>
+</div>
+<!-- 2nd section-->
+  <div class="container" id="info">
+ <div class="row">
+   <h2>Und hier natürlich auch</h2>
+ </div>
+</div>
+    <!--3rd section-->
+    <div class="container" id="love">
+ <div class="row">
+   <h2>Link 3</h2>
+ </div>
+</div>
+    <!--4th section-->
+    <div class="container" id="work">
+ <div class="row">
+   <h2>Link 4</h2>
+ </div>
+</div>
+    <!--5th section-->
+    <div class="container" id="contact">
+ <div class="row">
+   <h2>Sign In</h2>
+ </div>
+</div>
+</div>
     <div class="container">
       <%= yield %>
     </div>
