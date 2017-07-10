@@ -34,6 +34,11 @@ h3, h4, h5 {
   height: 100%;
 }
 
+.navbar-brand {
+  width: 128px;
+  height: auto;
+}
+
 .navbar-fixed-left .navbar-nav > li {
   float: none;  /* Cancel default li float: left */
   width: 139px;
@@ -42,6 +47,7 @@ h3, h4, h5 {
     opacity: 0.90;
   }
 }
+
 
 .custom-sign-in {
     background: transparent;
