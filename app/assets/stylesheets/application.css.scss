@@ -30,7 +30,6 @@ h3, h4, h5 {
   width: 200px;
   position: absolute;
   border-radius: 0;
-  margin-top: -100px;
   height: 100%;
 }
 
@@ -73,10 +72,13 @@ h3, h4, h5 {
 }
 
 .container {
-  height: 1000px;
-  margin-top: 40px;
+  height: 800px;
 }
 
 .wrapper {
   margin-left: 140px;
+}
+
+.new-callout .text-center{
+  margin-top: 40px;
 }

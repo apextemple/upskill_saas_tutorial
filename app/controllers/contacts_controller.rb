@@ -1,4 +1,4 @@
-class ContactsController < ApplicationsController
+class ContactsController < ApplicationController
     def new
     end
 end

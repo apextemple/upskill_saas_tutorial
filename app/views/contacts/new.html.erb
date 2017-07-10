@@ -1,4 +1,13 @@
-<div class="container text-center">
-    <h1>Kontaktieren Sie Mich</h1>
-    <h3>Denn ich bin besser als die nächsten 98% Prozent!</h3>
+<div class="new-callout container">
+    <h1 class="text-center">Kontaktieren Sie Mich</h1>
+    <h3 class="text-center">Denn ich bin besser als die nächsten 98% Prozent!</h3>
+    <%= form_for "/contacts" do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <%= f.label :email %>
+    <%= f.text_field :email %>
+    <%= f.label :comments %>
+    <%= f.text_area :comments %>
+    <%= f.submit 'Submit' %>
+  <% end %>
 </div>
