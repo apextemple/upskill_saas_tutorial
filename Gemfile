@@ -31,6 +31,9 @@ gem 'jbuilder', '2.5.0'
 # Use Twitter Boostrap Library for front-end UI and layout
 gem 'bootstrap-sass', '3.3.7'
 
+# Use of Herb weil ich geil bin
+gem 'hirb', '0.7.3'
+
 group :development, :test do
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3'
