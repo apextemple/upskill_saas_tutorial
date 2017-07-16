@@ -144,3 +144,12 @@ h3, h4, h5, h6 {
 .contact-well {
   height: 450px;
 }
+
+.btn-default {
+  border-radius: 30px;
+  color: #0000FF;
+  &:hover {
+    background: transparent;
+    color: #0000FF;
+  }
+}
