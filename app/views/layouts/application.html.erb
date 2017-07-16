@@ -24,10 +24,18 @@
   <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
 </div>
       <ul class="nav navbar-nav navbar-right">
-         <li><a href="/"><i class="fa fa-home"></i><span> Home </span></a></li>
-         <li><%= link_to "Contact Us", new_contact_path  %></li>
-         <li><%= link_to "About", about_path %></li>
-         <li><a href="#work"><i class="fa fa-briefcase"></i><span> Leitfaden </span></a></li>
+        <li><%= link_to root_path do %>
+          <i class="fa fa-home"></i> Home
+          <% end %>
+        </li>
+         <li><%= link_to about_path do %>
+           <i class="fa fa-user"></i> About Me
+           <% end %>
+         </li>
+         <li><%= link_to new_contact_path do %>
+           <i class="fa fa-envelope"></i> Contact Us
+           <% end %>
+         </li>
       </ul>
     </div>
   </div>
