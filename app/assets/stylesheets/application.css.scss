@@ -25,52 +25,6 @@ h3, h4, h5 {
     font-family: 'Open Sans', 'sans-serif';
 }
 
-/* CSS used here will be applied after bootstrap.css */
-.navbar-fixed-left {
-  width: 200px;
-  position: absolute;
-  border-radius: 0;
-  height: 100%;
-}
-
-.navbar-brand {
-  width: 128px;
-  height: auto;
-}
-
-.navbar-fixed-left .navbar-nav > li {
-  float: none;  /* Cancel default li float: left */
-  width: 139px;
-  &:hover {
-    color: #FFF;
-    opacity: 0.90;
-  }
-}
-
-
-.custom-sign-in {
-    background: transparent;
-    border: 2px solid #43cb83;
-    color: #FFF;
-    border-radius: 30px;
-    margin: 15px 50px 15px 25px;
-    padding: -30px 0px -30px 0px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: bold;
-    &:hover {
-    background: #43cb83;
-    transition: background 0.4s ease-in, font-size 0.4s ease-in;
-    transition-delay: font-size 0.3s;
-    font-size: 18px;
-    }
-}
-
-.navbar-fixed-left + .container {
-  padding-left: 160px;
-}
-
 .container {
   height: 800px;
 }
@@ -79,7 +33,8 @@ h3, h4, h5 {
   margin-left: 140px;
 }
 
-.container .row .new-callout {
-   padding-top: 70px;
-   margin-bottom: 50px;
+.collapse .navbar-collapse {
+  margin-top: 40px;
+  background: #ccc;
+  color: #fff;
 }

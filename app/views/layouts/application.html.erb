@@ -12,9 +12,12 @@
 
   <body>
     <!--navigation-->
-<div class="navbar navbar-inverse navbar-fixed-left">
-  <img class="navbar-brand" src="http://go.brand-fuel.de/wp-content/uploads/2017/07/openworldlogo.png">
-  <ul class="nav navbar-nav">
+<div class="collapse navbar-collpase" id="main-nav-collapse">
+   <div class="nav navbar-nav navbar-right">
+  <a href="/users/sign_in" class="btn btn-default navbar-btn">Log In</a>
+  <a href="/users/sign_up" class="btn btn-default navbar-btn">Sign Up</a>
+</div>
+  <ul class="nav navbar-nav navbar-right">
     <li><a href="/"><i class="fa fa-home"></i><span> Home </span></a></li>
    <li><a href="/about"><i class="fa fa-info-circle"></i><span> About </span></a></li>
    <li><%= link_to "Kontakt", new_contact_path  %></li>
