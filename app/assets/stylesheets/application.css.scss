@@ -25,16 +25,19 @@ h3, h4, h5 {
     font-family: 'Open Sans', 'sans-serif';
 }
 
-.container {
-  height: 800px;
-}
-
 .wrapper {
   margin-left: 140px;
 }
 
-.collapse .navbar-collapse {
-  margin-top: 40px;
-  background: #ccc;
-  color: #fff;
+.container {
+  height: 20px;
+}
+
+.navbar-brand {
+  height: auto;
+  padding: 0px;
+}
+
+.navbar-default {
+  background: transparent;
 }

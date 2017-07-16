@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>DevMatch</title>
+    <title>Amazable.io - Handcrafted Quality Articles</title>
     <%= csrf_meta_tags %>
     <link href="https://fonts.googleapis.com/css?family=Fresca" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700,800" rel="stylesheet">
@@ -11,21 +11,28 @@
   </head>
 
   <body>
-    <!--navigation-->
-<div class="collapse navbar-collpase" id="main-nav-collapse">
-   <div class="nav navbar-nav navbar-right">
-  <a href="/users/sign_in" class="btn btn-default navbar-btn">Log In</a>
-  <a href="/users/sign_up" class="btn btn-default navbar-btn">Sign Up</a>
+<nav class="navbar navbar-default navbar-static-top" role="navigation">
+  <div class='container'>
+    <div class="navbar-header">
+      <a href="/" class="navbar-brand">
+        <img src="https://brand-fuel.de/wp-content/uploads/2017/07/logo-klein.png">
+      </a>
+    </div>
+    <div class="collapse navbar-collapse" id="main-nav-collapse">
+    <div class="nav navbar-nav navbar-right">
+  <%= link_to "Log In", new_user_session_path, class: "btn btn-default navbar-btn" %>
+  <%= link_to "Sign Up", new_user_registration_path, class: "btn btn-default navbar-btn" %>
 </div>
-  <ul class="nav navbar-nav navbar-right">
-    <li><a href="/"><i class="fa fa-home"></i><span> Home </span></a></li>
-   <li><a href="/about"><i class="fa fa-info-circle"></i><span> About </span></a></li>
-   <li><%= link_to "Kontakt", new_contact_path  %></li>
-   <li><a href="#work"><i class="fa fa-briefcase"></i><span> Leitfaden </span></a></li>
-   <li class="custom-sign-in"><a href="/">Sign In</a></li>
-  </ul>
-</div>
-<!--end navigation-->
+      <ul class="nav navbar-nav navbar-right">
+         <li><a href="/"><i class="fa fa-home"></i><span> Home </span></a></li>
+         <li><%= link_to "Contact Us", new_contact_path  %></li>
+         <li><%= link_to "About", about_path %></li>
+         <li><a href="#work"><i class="fa fa-briefcase"></i><span> Leitfaden </span></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
       <%= yield %>
   </body>
 </html>
