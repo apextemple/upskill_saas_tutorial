@@ -1,11 +1,17 @@
-<div class="container">
+<div class="contact-callout container-fluid">
   <div class="row">
-    <h3 class="new-callout text-center">Contact Us</h3>
-    <div class="col-md-4 col-md-offset-4">
+    <h2 class="contact-callout-text text-left">Say Hello!</h2>
+    <h3 class="contact-callout-text text-left">Drop a line or tell us something 
+    about yourself!</h3>
+      </div>
+    </div>
+    <div class="container">
+      <div class="contact-callout-row row">
+    <div class="col-md-6 col-md-offset-2">
       <% flash.each do |type, msg| %>
         <%= content_tag :div, msg, class:"alert alert-#{type}" %>
       <% end %>
-      <div class="well">
+      <div class="contact-well well">
     <%= form_for @contact do |f| %>
     <div class="form-group">
     <%= f.label :name %>
@@ -21,7 +27,22 @@
     </div>
     <%= f.submit 'Absenden', class: 'btn btn-default' %>
   <% end %>
+                </div>
             </div>
         </div>
     </div>
+
+<div class="contact-container-2 container">
+  <div class="contact-callout-row-2 row">
+    <div class="col-md-4">
+      <div class="contact-well well">
+  <h2>Drop us a Line</h2>
+  <ul class="contact-list">
+    <li class="contact-list-item">Erstes Icon</li>
+    <li class="contact-list-item">Zweites Icon</li>
+    <li class="contact-list-item">Drittes Icon</li>
+  </ul>
+      </div>
+    </div>
+  </div>
 </div>
