@@ -48,17 +48,73 @@ h3, h4, h5, h6 {
 }
 
 .register-background {
-  background: #43cb83;
+  background: #000000;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   margin: -20px 50px 0px -50px;
   height: 1120px;
   position: fixed;
+  -webkit-box-shadow: 0 30px 20px #777;
+  -moz-box-shadow: 0 30px 20px #777;
+  box-shadow: 0 30px 20px #777;
 }
 
 .register-sign-up {
   padding: 150px 0px 0px 200px;
 }
 
+.register-sign-up-bg {
+  background: #333;
+}
+
+.logo-image {
+  padding: 50px 0px 0px 350px;
+}
+
 .register-heading {
   text-align: center;
   color: #fff;
+}
+
+.gradient-text {
+  color: #fff;
+  text-align: center;
+}
+
+.gradient-list {
+  color: #fff;
+  text-align: left;
+  padding: 50px 0px 0px 100px;
+  list-style-type: none;
+}
+
+.gradient-list-tag {
+  padding: 10px;
+  font-size: 18px;
+}
+
+.bg-image {
+  padding-left: 100px;
+  margin-top: 40px;
+}
+
+.form-sign-up {
+  padding-bottom: 25px;
+}
+
+.well {
+  background: #f9f9f9 none repeat scroll 0 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.btn-success {
+  background: #4caf50 none repeat scroll 0 0;
+    border: medium none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 15px;
+    margin: 0 0 5px;
+    padding: 10px;
+    width: 100%;
 }
