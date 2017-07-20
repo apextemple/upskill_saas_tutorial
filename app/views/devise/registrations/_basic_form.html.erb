@@ -1,4 +1,5 @@
 <h2 class="form-sign-up text-center">Basic Sign up</h2>
+      <%= hidden_field_tag 'plan', params[:plan] %>
         <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
           <%= devise_error_messages! %>
           <div class="field form-group">
