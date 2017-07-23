@@ -5,7 +5,7 @@ class ProfilesController < ApplicationController
     # POST to /users/:user_id/profile
 def create
   # Ensure that we have the user who is filling out form
-  @user = User.find( params[:user_id] )
+  @user = User.find(id: params[:user_id] )
   # Create profile linked to this specific user
   @profile = @user.build_profile( profile_params )
   if @profile.save
@@ -19,6 +19,18 @@ end
 def edit
   @user = User.find( params[:user_id] )
   @profile = @user.profile
+end
+
+def update
+  @user = User.find( params[:user_id] )
+  @profile = @user.profile
+  if @profile.update_attributes(profile_params)
+    flash[:success] = "Profile has benn updated."
+    #Redirect user to their profile page
+    redirect_to user_path(id: params[:user_id] )
+  else
+    render action: :edit
+  end
 end
 
 private
